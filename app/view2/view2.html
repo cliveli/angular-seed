@@ -1,5 +1,22 @@
-<p>This is the partial for view 2.</p>
+<div class="page-header">
+<h2>This is the partial for view 2.</h2>
+</div>
+
+<!-- <div class="row">
+  <div class="col-sm-6 col-md-4">
+  	<p>test</p>
+  </div>
+</div>   -->	
 <p>
+	
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+
+<p>
+	Now start test ng model and bind, plese input number:
+</p>
+<p><input type="text" ng-model="badgeRef"> </p>
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">{{ message_number }}</span>
+</button>
